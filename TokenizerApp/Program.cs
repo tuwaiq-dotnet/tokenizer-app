@@ -40,14 +40,8 @@ namespace TokenizerApp
                 {
                     token = t.tokinze(handlers);
 
-<<<<<<< HEAD
-                    if(token != null)
-                        Console.WriteLine($"{token.value}\t\t\t\t{token.type}");
-=======
                     if (token != null)
                         Console.WriteLine($"{token.value,-10}{token.type,30}");
-
->>>>>>> 49c397a2af25a49e4b885403817f173c3bc0578d
                 }
                 catch (Exception e)
                 {
