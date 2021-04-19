@@ -46,16 +46,16 @@ namespace TokenizerApp
         {
             Token token = new Token();
             token.type = "bitwise operator";
-            token.value = "" + t.peek();
+            token.value = "" + t.next();
             token.position = t.currentPosition;
             token.lineNumber = t.lineNumber;
             switch (t.peek())
             {
                 case '<':
-                    token.value += "<";
+                    token.value += t.next();
                     break;
                 case '>':
-                    token.value += ">";
+                    token.value += t.next();
                     break;
             }
             return token;
