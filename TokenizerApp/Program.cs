@@ -18,13 +18,14 @@ namespace TokenizerApp
             string case1 = "\"this is args string\" 55 _ioig var base /*dzdwdwdw*/ ";
 
             Tokenizer t = new Tokenizer(case1);
-            Tokenizable[] handlers = new Tokenizable[] {
+            Tokenizable[] handlers = new Tokenizable[]
+            {
+                new CommentTokenzier(),
+                new KeywordsTokenizer(),
                 new IdTokenzier(),
                 new NumberTokenzier(),
                 new WhiteSpaceTokenzier(),
                 new StringTokenizer(),
-                new KeywordsTokenizer(),
-                new CommentTokenzier()
             };
 
             Console.WriteLine($"Source: {case1}\n");
@@ -39,7 +40,7 @@ namespace TokenizerApp
                     token = t.tokinze(handlers);
 
                     if(token != null)
-                        Console.WriteLine($"{token.value}\t\t\t\t\t{token.type}");
+                        Console.WriteLine($"{token.value, -10}{token.type, 30}");
 
                 }
                 catch (Exception e)
