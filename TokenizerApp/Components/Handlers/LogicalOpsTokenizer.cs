@@ -1,10 +1,10 @@
 using System;
 namespace TokenizerApp
 {
-    public class BitwiseTokenizer : Tokenizable
+    public class LogicalOpsTokenizer : Tokenizable
     {
 
-        private bool shiftAssertion(bool shiftRight, Tokenizer t)
+        private bool operatorAssertion(char op, Tokenizer t)
         {
             int i = t.currentPosition;
             t.next();
@@ -15,7 +15,7 @@ namespace TokenizerApp
             }
             else
             {
-				bool res = t.peek() == (shiftRight ? '>' : '<');
+                bool res = t.peek() == op;
                 t.currentPosition = i;
                 return res;
             }
@@ -26,18 +26,12 @@ namespace TokenizerApp
             if (!t.hasMore()) return false;
             switch (t.peek())
             {
-                case '|':
+                case '!':
                     return true;
                 case '&':
-                    return true;
-                case '~':
-                    return true;
-                case '^':
-                    return true;
-                case '<':
-                    return shiftAssertion(false, t);
-                case '>':
-                    return shiftAssertion(true, t);
+                    return operatorAssertion('&', t);
+                case '|':
+                    return operatorAssertion('|', t);
                 default:
                     return false;
             }
@@ -46,16 +40,16 @@ namespace TokenizerApp
         public override Token tokeinze(Tokenizer t)
         {
             Token token = new Token();
-            token.type = "bitwise operator";
+            token.type = "logical operator";
             token.value = "" + t.next();
             token.position = t.currentPosition;
             token.lineNumber = t.lineNumber;
             switch (t.peek())
             {
-                case '<':
+                case '&':
                     token.value += t.next();
                     break;
-                case '>':
+                case '|':
                     token.value += t.next();
                     break;
             }
