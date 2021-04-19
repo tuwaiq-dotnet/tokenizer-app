@@ -2,7 +2,7 @@
 
 ### The team implemented a C# Tokenizer with 8 handlers. In the Handlers folder exist the 8 handlers. The Components folder has the different classes required for the tokenization proccess.
 
-> [▶ Run Tokenizer](https://dotnetfiddle.net/P3nzBA)
+> [▶ Run Tokenizer App](https://dotnetfiddle.net/P3nzBA)
 
 ## Implemented Handlers
 
