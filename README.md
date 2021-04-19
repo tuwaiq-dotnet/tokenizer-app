@@ -1,24 +1,24 @@
-﻿# C# Tokenizer - 8 Handlers 
+# C# Tokenizer - 8 Handlers
 
-### Our team implemented a C# Tokenizer with 8 handlers
+### The team implemented a C# Tokenizer with 8 handlers. In the Handlers folder exist the 8 handlers. The Components folder has the different classes required for the tokenization proccess.
 
-> [▶ Run Tokenizer](https://dotnetfiddle.net/SJCYwi)
+> [▶ Run Tokenizer App](https://dotnetfiddle.net/P3nzBA)
 
 ## Implemented Handlers
 
-1. Handler
-2. Handler
-3. Handler
-4. Handler
-5. Handler
-6. Handler
-7. Handler
-8. Handler
+1. C# Comment Handler
+2. Logical Operators Handler
+3. Bitwise Operators Handler
+4. C# Keywords Handler
+5. C# Identifier Handler
+6. Numbers Handler
+7. White Space Handler
+8. C# String Handler
 
 ## Sample Output
 
 <p align="center">
-  <img alt="JSONBuilder Demo" src="https://github.com/YounesAlturkey/builder-and-checkorder/blob/main/json-builder-demo.png">
+  <img alt="JSONBuilder Demo" src="https://github.com/YounesAlturkey/tokenizer-app/blob/master/demo.png">
 </p>
 
 ## Group Members
