@@ -20,8 +20,8 @@ namespace TokenizerApp
             Tokenizer t = new Tokenizer(case1);
             Tokenizable[] handlers = new Tokenizable[]
             {
-                new BitwiseTokenizer(),
                 new CommentTokenzier(),
+                new BitwiseTokenizer(),
                 new KeywordsTokenizer(),
                 new IdTokenzier(),
                 new NumberTokenzier(),
