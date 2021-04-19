@@ -19,6 +19,7 @@ namespace TokenizerApp
 
             Tokenizer t = new Tokenizer(case1);
             Tokenizable[] handlers = new Tokenizable[] {
+                new BitwiseTokenizer(),
                 new IdTokenzier(),
                 new NumberTokenzier(),
                 new WhiteSpaceTokenzier(),
