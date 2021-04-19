@@ -15,7 +15,7 @@ namespace TokenizerApp
         // Driver code
         public static void Main(string[] args)
         {
-            string case1 = "\"this is args string\" 55 _ioig var base /*drgdrgdrgdr8*/ ";
+            string case1 = "\"this is args string\" |mewo || HELLo & jaw && 55 _ioig var base /*dzdwdwdw*/ ";
 
             Tokenizer t = new Tokenizer(case1);
             Tokenizable[] handlers = new Tokenizable[]
@@ -40,8 +40,9 @@ namespace TokenizerApp
                 {
                     token = t.tokinze(handlers);
 
+
                     if (token != null)
-                        Console.WriteLine($"{token.value,-10}{token.type,30}");
+                        Console.WriteLine($"{token.value,-30}{token.type}");
                 }
                 catch (Exception e)
                 {

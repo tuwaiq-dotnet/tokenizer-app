@@ -16,7 +16,7 @@ namespace TokenizerApp
             else
             {
                 t.currentPosition = i;
-                return t.peek() == (shiftRight?'>':'<');
+                return t.peek() == (shiftRight ? '>' : '<');
             }
         }
         public override bool tokenizable(Tokenizer t)
@@ -46,14 +46,18 @@ namespace TokenizerApp
         {
             Token token = new Token();
             token.type = "bitwise operator";
-            token.value = "";
+            token.value = "" + t.next();
             token.position = t.currentPosition;
             token.lineNumber = t.lineNumber;
-            while (t.hasMore() && Char.IsDigit(t.peek()))
+            switch (t.peek())
             {
-                token.value += t.next();
+                case '<':
+                    token.value += t.next();
+                    break;
+                case '>':
+                    token.value += t.next();
+                    break;
             }
-
             return token;
         }
     }
