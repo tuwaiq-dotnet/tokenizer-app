@@ -15,7 +15,7 @@ namespace TokenizerApp
         // Driver code
         public static void Main(string[] args)
         {
-            string case1 = "\"this is args string\" 55 _ioig var base /*dzdwdwdw*/ ";
+            string case1 = "\"this is args string\" |mewo || HELLo & jaw && 55 _ioig var base /*dzdwdwdw*/ ";
 
             Tokenizer t = new Tokenizer(case1);
             Tokenizable[] handlers = new Tokenizable[]
