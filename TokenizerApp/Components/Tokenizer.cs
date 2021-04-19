@@ -55,5 +55,24 @@ namespace TokenizerApp
 			else return null;
 			throw new Exception($"Unexpected token {c}");
 		}
+
+		public int indexOfChar(char ch)
+        {
+			return input.IndexOf(ch);
+        }
+
+		public int lastIndexOfChar(char ch)
+		{
+			return input.LastIndexOf(ch);
+		}
+
+		public int getCurrentPostion()
+		{
+			return currentPosition;
+		}
+		public void setCurrentPostion(int currentPosition)
+		{
+			this.currentPosition = currentPosition;
+		}
 	}
 }
