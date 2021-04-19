@@ -21,6 +21,7 @@ namespace TokenizerApp
             Tokenizable[] handlers = new Tokenizable[]
             {
                 new CommentTokenzier(),
+                new LogicalOpsTokenizer(),
                 new BitwiseTokenizer(),
                 new KeywordsTokenizer(),
                 new IdTokenzier(),
