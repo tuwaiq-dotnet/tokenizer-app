@@ -50,8 +50,10 @@ namespace TokenizerApp
 					return t.tokeinze(this);
 				}
 			}
-
-			return null;
+			char c;
+			if(hasMore()) c=this.next();
+			else return null;
+			throw new Exception($"Unexpected token {c}");
 		}
 	}
 }
