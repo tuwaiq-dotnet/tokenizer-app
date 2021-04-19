@@ -15,20 +15,22 @@ namespace TokenizerApp
         // Driver code
         public static void Main(string[] args)
         {
-            string case1 = "\"this is args string\" 55 _ioig var base /*dzdwdwdw*/ ";
+            string case1 = "\"this is args string\" |mewo || HELLo & jaw && 55 _ioig var base /*dzdwdwdw*/ ";
 
             Tokenizer t = new Tokenizer(case1);
-            Tokenizable[] handlers = new Tokenizable[] {
+            Tokenizable[] handlers = new Tokenizable[]
+            {
+                new CommentTokenzier(),
+                new BitwiseTokenizer(),
+                new KeywordsTokenizer(),
                 new IdTokenzier(),
                 new NumberTokenzier(),
                 new WhiteSpaceTokenzier(),
-                new StringTokenizer(),
-                new KeywordsTokenizer(),
-                new CommentTokenzier()
+                new StringTokenizer()
             };
 
             Console.WriteLine($"Source: {case1}\n");
-            Console.WriteLine("Token\t\t\t\t\tType");
+            Console.WriteLine("Token\t\t\t\tType");
 
             Token token = null;
 
@@ -38,9 +40,9 @@ namespace TokenizerApp
                 {
                     token = t.tokinze(handlers);
 
-                    if(token != null)
-                        Console.WriteLine($"{token.value}\t\t\t\t\t{token.type}");
 
+                    if (token != null)
+                        Console.WriteLine($"{token.value,-30}{token.type}");
                 }
                 catch (Exception e)
                 {
