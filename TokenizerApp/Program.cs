@@ -26,11 +26,11 @@ namespace TokenizerApp
                 new IdTokenzier(),
                 new NumberTokenzier(),
                 new WhiteSpaceTokenzier(),
-                new StringTokenizer(),
+                new StringTokenizer()
             };
 
             Console.WriteLine($"Source: {case1}\n");
-            Console.WriteLine("Token\t\t\t\t\tType");
+            Console.WriteLine("Token\t\t\t\tType");
 
             Token token = null;
 
@@ -40,9 +40,9 @@ namespace TokenizerApp
                 {
                     token = t.tokinze(handlers);
 
-                    if (token != null)
-                        Console.WriteLine($"{token.value,-10}{token.type,30}");
 
+                    if (token != null)
+                        Console.WriteLine($"{token.value,-30}{token.type}");
                 }
                 catch (Exception e)
                 {

@@ -24,10 +24,7 @@ namespace TokenizerApp
                 foreach (var k in keywords)
                 {
                     if (key == k)
-                    {
-                        Console.WriteLine("keyword found");
                         return true;
-                    }
                 }
             }
             t.setCurrentPostion(currentPostion);
