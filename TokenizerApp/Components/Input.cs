@@ -1,4 +1,6 @@
-﻿/*
+﻿using System;
+
+/*
  * Tuwaiq .NET Bootcamp
  * 
  * Authors
