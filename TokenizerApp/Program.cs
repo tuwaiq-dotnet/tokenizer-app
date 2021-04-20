@@ -1,12 +1,13 @@
 ﻿/*
  * Tuwaiq .NET Bootcamp
+ * 
  * Authors
- * Younes Alturkey
- * Abdulrahman Bin Maneea
- * Abdullah Albagshi
- * Ibrahim Alobaysi
+ * 
+ *  Younes Alturkey
+ *  Abdulrahman Bin Maneea
+ *  Abdullah Albagshi
+ *  Ibrahim Alobaysi
  */
-using System;
 
 namespace TokenizerApp
 {
@@ -15,42 +16,21 @@ namespace TokenizerApp
         // Driver code
         public static void Main(string[] args)
         {
-            string case1 = "\"this is args string\" |mewo || HELLo & jaw && 55 _ioig var base /*dzdwdwdw*/ || | && & ";
+            //string input = "\"this is args string\" |mewo || HELLo & jaw && 55 _ioig var base /*dzdwdwdw*/ || | && & ";
+            //Tokenizer tokenizer = new Tokenizer(input);
+            //// Inject handlers and print tokens
+            //tokenizer.print(new Tokenizable[]
+            //{
+            //    new CommentTokenzier(),
+            //    new LogicalOpsTokenizer(),
+            //    new BitwiseTokenizer(),
+            //    new KeywordsTokenizer(),
+            //    new IdTokenzier(),
+            //    new NumberTokenzier(),
+            //    new WhiteSpaceTokenzier(),
+            //    new StringTokenizer()
+            //});
 
-            Tokenizer t = new Tokenizer(case1);
-            Tokenizable[] handlers = new Tokenizable[]
-            {
-                new CommentTokenzier(),
-                new LogicalOpsTokenizer(),
-                new BitwiseTokenizer(),
-                new KeywordsTokenizer(),
-                new IdTokenzier(),
-                new NumberTokenzier(),
-                new WhiteSpaceTokenzier(),
-                new StringTokenizer()
-            };
-
-            Console.WriteLine($"Source: {case1}\n");
-            Console.WriteLine("Token\t\t\t\tType");
-
-            Token token = null;
-
-            do
-            {
-                try
-                {
-                    token = t.tokinze(handlers);
-
-
-                    if (token != null)
-                        Console.WriteLine($"{token.value,-30}{token.type}");
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine($"Exception: {e.Message}");
-                }
-            }
-            while (token != null);
         }
     }
 }

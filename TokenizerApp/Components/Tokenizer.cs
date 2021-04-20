@@ -1,4 +1,16 @@
 ﻿using System;
+
+/*
+ * Tuwaiq .NET Bootcamp
+ * 
+ * Authors
+ * 
+ *  Younes Alturkey
+ *  Abdulrahman Bin Maneea
+ *  Abdullah Albagshi
+ *  Ibrahim Alobaysi
+ */
+
 namespace TokenizerApp
 {
 	public class Tokenizer
@@ -73,6 +85,30 @@ namespace TokenizerApp
 		public void setCurrentPostion(int currentPosition)
 		{
 			this.currentPosition = currentPosition;
+		}
+
+		public void print(Tokenizable[] handlers)
+		{
+			Console.WriteLine($"Source: {this.input}\n");
+			Console.WriteLine("Token\t\t\t\tType");
+
+			Token token = null;
+
+			do
+			{
+				try
+				{
+					// Inject handlers
+					token = this.tokinze(handlers);
+					if (token != null)
+						Console.WriteLine($"{token.value,-30}{token.type}");
+				}
+				catch (Exception e)
+				{
+					Console.WriteLine($"Exception: {e.Message}");
+				}
+			}
+			while (token != null);
 		}
 	}
 }

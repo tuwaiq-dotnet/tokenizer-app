@@ -1,4 +1,14 @@
-using System;
+/*
+ * Tuwaiq .NET Bootcamp
+ * 
+ * Authors
+ * 
+ *  Younes Alturkey
+ *  Abdulrahman Bin Maneea
+ *  Abdullah Albagshi
+ *  Ibrahim Alobaysi
+ */
+
 namespace TokenizerApp
 {
     public class BitwiseTokenizer : Tokenizable
