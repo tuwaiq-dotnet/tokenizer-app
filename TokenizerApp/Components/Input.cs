@@ -94,8 +94,64 @@ namespace TokenizerApp
             }
             return this;
         }
-        public Input reset() { return this; }
-        public char peek(int numOfSteps = 1) { return '\0'; }
-        //public bool hasMore(int numOfSteps=1) { return true; }
+        public Input reset()
+        {
+            this.position = -1;
+            this.lineNumber = 1;
+            return this;
+        }
+        public char peek(int numOfSteps = 1)
+        {
+            if (this.hasMore(numOfSteps))
+                return this.Character;
+            else
+            {
+                throw new Exception("There is no more step");
+            }
+        }
+        public char next()
+        {
+            return this.step(1).Character;
+        }
+        public int indexOf(char ch)
+        {
+            int firstIndex = -1;
+            for (int i = 0; i < input.Length; i++)
+            {
+                if (input[i] == ch)
+                    return i;
+            }
+            return firstIndex;
+        }
+        public int lastIndexOf(char ch)
+        {
+            int lastIndex = -1;
+            for(int i = 0; i < input.Length; i++)
+            {
+                if (input[i] == ch)
+                    lastIndex = i;
+            }
+            return lastIndex;
+        }
+        public int frequencyOf(char ch)
+        {
+            int numberOfFrequency = 0;
+            foreach (char character in input)
+            {
+                if (character == ch)
+                    numberOfFrequency++;
+            }
+            return numberOfFrequency;
+        }
+        public bool contains(char ch)
+        {
+            foreach(char character in input)
+            {
+                if (character == ch)
+                    return true;
+            }
+
+            return false;
+        }
     }
 }
