@@ -66,7 +66,8 @@ namespace TokenizerApp
         public bool hasMore(int numOfSteps = 1)
         {
             if (numOfSteps <= 0) throw new Exception("Invalid number of steps");
-            return (this.position + numOfSteps) < this.length;
+            int t = (this.position + numOfSteps);
+            return  0<= t && t < this.length;
         }
         public bool hasLess(int numOfSteps = 1)
         {
