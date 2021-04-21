@@ -14,6 +14,10 @@ namespace TokenizerApp
 	public abstract class Tokenizable
 	{
 		public abstract bool tokenizable(Tokenizer tokenizer);
-		public abstract Token tokeinze(Tokenizer tokenizer);
+		public abstract Token tokenize(Tokenizer tokenizer);
+
+		/*
+		 * loop
+		 */
 	}
 }

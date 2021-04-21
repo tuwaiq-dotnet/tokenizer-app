@@ -13,9 +13,11 @@ namespace TokenizerApp
 {
 	public class Token
 	{
-		public string type;
-		public string value;
-		public int position;
-		public int lineNumber;
+		public int Position { set; get; }
+		public int lineNumber { set; get;  }
+		public string Type { set; get;  }
+		public string Value { set; get; }
+
+		public Token(int position, int lineNumber, string type, string value) { }
 	}
 }

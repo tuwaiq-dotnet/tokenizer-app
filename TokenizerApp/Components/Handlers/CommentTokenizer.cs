@@ -13,41 +13,14 @@ namespace TokenizerApp
 {
     public class CommentTokenzier : Tokenizable
     {
-        public override bool tokenizable(Tokenizer t)
+        public override bool tokenizable(Tokenizer tokenizer)
         {
-            if (t.hasMore() && t.peek() == '/')
-            {
-                t.next();
-                if (t.hasMore() && (t.peek() == '/' || t.peek() == '*'))
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-            return t.hasMore() && t.peek() == '/';
+            throw new System.NotImplementedException();
         }
-        public override Token tokeinze(Tokenizer t)
+
+        public override Token tokenize(Tokenizer tokenizer)
         {
-            Token token = new Token();
-            token.type = "comment";
-            token.value = "/";
-            token.position = t.currentPosition;
-            token.lineNumber = t.lineNumber;
-            while (t.hasMore())
-            {
-                if (t.peek() == '\n')
-                    break;
-                if (t.peek() == '/' && token.value.EndsWith('*'))
-                {
-                    token.value += t.next();
-                    break;
-                }
-                token.value += t.next();
-            }
-            return token;
+            throw new System.NotImplementedException();
         }
     }
 }
