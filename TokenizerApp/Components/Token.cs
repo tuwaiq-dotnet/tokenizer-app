@@ -18,12 +18,12 @@ namespace TokenizerApp
         public string Value { set; get; }
         public Token(int position, int lineNumber, string type, string value) { }
     }
-    public abstract class Tokenizable
-    {
-        public abstract bool tokenizable(Tokenizer tokenizer);
-        public abstract Token tokenize(Tokenizer tokenizer);
-        /*
-          loop
-         */
-    }
+    //public abstract class Tokenizable
+    //{
+    //    public abstract bool tokenizable(Tokenizer tokenizer);
+    //    public abstract Token tokenize(Tokenizer tokenizer);
+    //    /*
+    //      loop
+    //     */
+    //}
 }
