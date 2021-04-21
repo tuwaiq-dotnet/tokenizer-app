@@ -11,16 +11,37 @@
 
 namespace TokenizerApp
 {
-    public class IdTokenzier : Tokenizable
+    public class IdTokenizer : Tokenizable
     {
-        public override bool tokenizable(Tokenizer tokenizer)
+        private List<string> keywords = new List<string> {
+            "let","var","if","else","for","while","fun","return"
+        };
+        private bool isKeyword(string value)
         {
-            throw new System.NotImplementedException();
+            return this.keywords.Contains(value);
         }
-
-        public override Token tokenize(Tokenizer tokenizer)
+        public override bool tokenizable(Tokenizer t)
         {
-            throw new System.NotImplementedException();
+            char currentCharacter = t.input.peek();
+            //Console.WriteLine(currentCharacter);
+            return Char.IsLetter(currentCharacter) || currentCharacter == '_';
+        }
+        public override Token tokenize(Tokenizer t)
+        {
+            //1. initialize token
+            Token token = new Token(t.input.Position, t.input.LineNumber, "identifier", "");
+            //2. do action
+            //loop
+            char currentCharacter = t.input.peek();
+            while (t.input.hasMore() && (Char.IsLetterOrDigit(currentCharacter) || currentCharacter == '_'))
+            {
+                token.Value += t.input.step().Character;
+                currentCharacter = t.input.peek();
+            }
+            //3. return token
+            if (this.isKeyword(token.Value))
+                token.Type = "keyword";
+            return token;
         }
     }
 }
