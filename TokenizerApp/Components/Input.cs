@@ -101,5 +101,15 @@ namespace TokenizerApp
             return '\0';
         }
         //public bool hasMore(int numOfSteps=1) { return true; }
+
+        public int indexOf(char ch)
+        {
+            return this.input.IndexOf(ch);
+        }
+
+        public int lastIndexOf(char ch)
+        {
+            return this.input.LastIndexOf(ch);
+        }
     }
 }

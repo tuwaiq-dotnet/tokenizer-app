@@ -18,7 +18,13 @@ namespace TokenizerApp
         // Driver code
         public static void Main(string[] args)
         {
-            Tokenizer t = new Tokenizer(new Input("how are you"), new Tokenizable[] { new IdTokenizer() });
+            Tokenizer t = new Tokenizer(new Input("\"qkljqiejoqijeoqi2jeoqi2j\""), new Tokenizable[]
+            {
+                // Inject handlers here
+                //new IdTokenizer()
+                new StringTokenizer()
+            }); ;
+
             Console.WriteLine(t.tokenize().Value);
         }
     }

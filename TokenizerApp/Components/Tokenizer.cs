@@ -32,6 +32,9 @@ namespace TokenizerApp
                 if (handler.tokenizable(this)) return handler.tokenize(this);
             return null;
         }
-        public List<Token> all() { return null; }
+        public List<Token> all()
+        {
+            return null;
+        }
     }
 }
