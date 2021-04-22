@@ -1,8 +1,8 @@
 # C# Tokenizer - 8 Handlers
 
-## Caustion: Spaghetti Code Ahead
+## Caution: Spaghetti Code Ahead
 
-![Spaghetti Code](https://external-preview.redd.it/blockjW48puvj5Z3qTSFzAGIe4_eUK_GY3SKJSBQ4Tg.gif?format=mp4&s=bfa0f38405e3449a31c5131bd5916b2ae94dc2a4)
+![Spaghetti Code](https://media.giphy.com/media/11uoNyauChZR16/giphy.gif)
 
 ### The team implemented a C# Tokenizer with 8 handlers. In the Handlers folder exist 8 handlers and the Components folder has the different classes required for the tokenization proccess functionalities.
 
