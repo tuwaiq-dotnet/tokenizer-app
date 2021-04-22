@@ -15,10 +15,10 @@
 7. White Space Handler
 8. C# String Handler
 
-## Sample Output
+## NumberTokenizer Handler
 
 <p align="center">
-  <img alt="JSONBuilder Demo" src="https://github.com/YounesAlturkey/tokenizer-app/blob/master/demo.png">
+  <img alt="JSONBuilder Demo" src="https://github.com/YounesAlturkey/tokenizer-app/blob/master/number-handler-demo.png">
 </p>
 
 ## Group Members
