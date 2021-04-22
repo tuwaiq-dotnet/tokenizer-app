@@ -96,8 +96,8 @@ namespace TokenizerApp
             return this;
         }
         public Input reset() { return this; }
-        public char peek(int numOfSteps = 1) {
-            if (this.hasMore()) return this.input[this.NextPosition];
+        public char peek(int numOfSteps = 0) {
+            if (this.hasMore()) return this.input[this.NextPosition + numOfSteps];
             return '\0';
         }
         //public bool hasMore(int numOfSteps=1) { return true; }
@@ -110,6 +110,16 @@ namespace TokenizerApp
         public int lastIndexOf(char ch)
         {
             return this.input.LastIndexOf(ch);
+        }
+
+        public bool contains(char c)
+        {
+            return input.Contains(c);
+        }
+
+        public char lastCharacter()
+        {
+            return this.input[this.Length - 1];
         }
     }
 }

@@ -1,0 +1,16 @@
+C:\Users\Younes\Desktop\tokenizer-app\TokenizerApp\obj\Release\net5.0\TokenizerApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Younes\Desktop\tokenizer-app\TokenizerApp\obj\Release\net5.0\TokenizerApp.AssemblyInfoInputs.cache
+C:\Users\Younes\Desktop\tokenizer-app\TokenizerApp\obj\Release\net5.0\TokenizerApp.AssemblyInfo.cs
+C:\Users\Younes\Desktop\tokenizer-app\TokenizerApp\obj\Release\net5.0\TokenizerApp.csproj.CoreCompileInputs.cache
+C:\Users\Younes\Desktop\tokenizer-app\TokenizerApp\bin\Release\net5.0\TokenizerApp.exe
+C:\Users\Younes\Desktop\tokenizer-app\TokenizerApp\bin\Release\net5.0\TokenizerApp.deps.json
+C:\Users\Younes\Desktop\tokenizer-app\TokenizerApp\bin\Release\net5.0\TokenizerApp.runtimeconfig.json
+C:\Users\Younes\Desktop\tokenizer-app\TokenizerApp\bin\Release\net5.0\TokenizerApp.runtimeconfig.dev.json
+C:\Users\Younes\Desktop\tokenizer-app\TokenizerApp\bin\Release\net5.0\TokenizerApp.dll
+C:\Users\Younes\Desktop\tokenizer-app\TokenizerApp\bin\Release\net5.0\ref\TokenizerApp.dll
+C:\Users\Younes\Desktop\tokenizer-app\TokenizerApp\bin\Release\net5.0\TokenizerApp.pdb
+C:\Users\Younes\Desktop\tokenizer-app\TokenizerApp\obj\Release\net5.0\TokenizerApp.dll
+C:\Users\Younes\Desktop\tokenizer-app\TokenizerApp\obj\Release\net5.0\ref\TokenizerApp.dll
+C:\Users\Younes\Desktop\tokenizer-app\TokenizerApp\obj\Release\net5.0\TokenizerApp.pdb
+C:\Users\Younes\Desktop\tokenizer-app\TokenizerApp\obj\Release\net5.0\TokenizerApp.genruntimeconfig.cache
+C:\Users\Younes\Desktop\tokenizer-app\TokenizerApp\obj\Release\net5.0\TokenizerApp.csprojAssemblyReference.cache
