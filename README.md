@@ -3,7 +3,7 @@
 ## Caution: Spaghetti Code Ahead
 
 <p align="center">
-![Spaghetti Code](https://media.giphy.com/media/11uoNyauChZR16/giphy.gif)
+  <img alt="Spaghetti Code" src="https://media.giphy.com/media/11uoNyauChZR16/giphy.gif">
   </p>
 
 ### The team implemented a C# Tokenizer with 8 handlers. In the Handlers folder exist 8 handlers and the Components folder has the different classes required for the tokenization proccess functionalities.
