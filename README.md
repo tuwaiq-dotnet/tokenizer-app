@@ -6,7 +6,6 @@
 
 > [▶ Run Tokenizer App](https://dotnetfiddle.net/P3nzBA)
 
-
 ## Caution: Spaghetti Code Ahead
 
 <p align="center">
@@ -30,7 +29,7 @@
 7. White Space Handler
 8. C# String Handler
 
-## Group Members
+## <p align="right">معلومات الفريق</p>
 
 <div align="right" dir="rtl">  
   
