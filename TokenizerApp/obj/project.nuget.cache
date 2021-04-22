@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V4Fng2wdk/AThapO9sHWN1426+467dr48dJxqikq+KQ4OfqpCOg1E/wWLUC738a5xSPYiDhAEre7ZREEey1y3A==",
+  "dgSpecHash": "LjLYuxD9v62uDljqmZlDFrTi7duGdRqyzXYU+tTRst+WyZNf08U+wiue7lbjJ2+gra7S96gMLIaKOC9k5ZW4Dw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Younes\\Desktop\\tokenizer-app\\TokenizerApp\\TokenizerApp.csproj",
+  "projectFilePath": "/Users/younes/Projects/TokenizerApp/TokenizerApp/TokenizerApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

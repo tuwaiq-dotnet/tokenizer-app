@@ -22,7 +22,8 @@ namespace TokenizerApp
             {
                 string[] testCases = new string[]
                 {
-                    "123",
+                    "0X11",
+                    "67UL",
                     "-125.516",
                     "0x01010",
                     "10e+5",
