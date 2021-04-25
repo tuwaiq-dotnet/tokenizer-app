@@ -15,7 +15,7 @@
 ## NumberTokenizer Handler
 
 <p align="center">
-  <img alt="JSONBuilder Demo" src="https://github.com/YounesAlturkey/tokenizer-app/blob/master/number-handler-demo.png">
+  <img alt="JSONBuilder Demo" src="https://raw.githubusercontent.com/tuwaiq-dotnet/tokenizer-app/master/demo.png">
 </p>
 
 ## Implemented Handlers
